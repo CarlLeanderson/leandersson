@@ -2,6 +2,7 @@
   "name": "leandersson",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://leandersson.dev",
   "dependencies": {
     "@u-wave/react-vimeo": "^0.9.5",
     "aos": "^2.3.4",
@@ -11,6 +12,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
