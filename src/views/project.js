@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "../style/project.css";
-import ReactPlayer from "react-player";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import Vimeo from "@u-wave/react-vimeo";
