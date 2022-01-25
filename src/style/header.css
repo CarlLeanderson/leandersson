@@ -1,0 +1,17 @@
+.navbar {
+  margin-top: 3em;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.nav-a {
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-right: 2rem;
+  color: black;
+  float: right;
+}
