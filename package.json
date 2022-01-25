@@ -2,7 +2,7 @@
   "name": "leandersson",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://leandersson.dev",
+  "homepage" : "https://carlleanderson.github.io/",
   "dependencies": {
     "@u-wave/react-vimeo": "^0.9.5",
     "aos": "^2.3.4",
