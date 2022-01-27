@@ -5,7 +5,7 @@ const projectsData = [
     category: "Mobile",
     title: "UniBook",
     type: "iOS Application",
-    tag: "UniBokApp is an app where a user can sell and buy second hand course literature.",
+    tag: "iOS app for acquiring and selling course literature.",
     description:
       "UniBokApp is an app where a user can sell and buy second hand course literature. A user logs in using Facebook and can then browse popular titles ans latest views. They can also search among ads and create their on ads. An add contains title, ISBN, price, condition and images of the book, which the user can upload from it's cameraroll. UniBook is an iOS app built in SwitftUI. A NodeJS server for push notifications was made as well.",
     videourl: "",

@@ -1,5 +1,7 @@
-import { useState, useEffect } from "react";
-import Project from "../views/project";
+import React, { useState, useEffect, Suspense } from "react";
+import "../App.css";
+
+const Project = React.lazy(() => import("../views/project"));
 
 const ProjectController = (props) => {
   const [filterState, setFilterState] = useState(props.data.filter);
@@ -22,7 +24,11 @@ const ProjectController = (props) => {
     });
   }
 
-  return projects.map((x) => <Project key={x.id} data={x} />);
+  return projects.map((x) => (
+    <Suspense key={x.id} fallback={<></>}>
+      <Project data={x} />
+    </Suspense>
+  ));
 };
 
 export default ProjectController;

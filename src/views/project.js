@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
 import "../style/project.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
@@ -6,9 +6,24 @@ import Vimeo from "@u-wave/react-vimeo";
 import GifPlayer from "react-gif-player";
 
 const Project = (props) => {
+  const [width, height] = useWindowSize();
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
+  function useWindowSize() {
+    const [size, setSize] = useState([0, 0]);
+    useLayoutEffect(() => {
+      function updateSize() {
+        setSize([window.innerWidth, window.innerHeight]);
+      }
+      window.addEventListener("resize", updateSize);
+      updateSize();
+      return () => window.removeEventListener("resize", updateSize);
+    }, []);
+    return size;
+  }
 
   return (
     <div data-aos="fade-up" className="project-container">
@@ -16,7 +31,7 @@ const Project = (props) => {
         <h2>{props.data.title}</h2>
         <p>{props.data.tag}</p>
         {props.data.img && (
-          <div className=".project-img">
+          <div style={width <= 1100 ? { width: "100%" } : { width: "80%" }}>
             <GifPlayer gif={props.data.img} still={props.data.still} />
           </div>
         )}

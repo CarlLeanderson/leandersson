@@ -26,9 +26,9 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .project-img {
+  /*.project-img {
     width: 100%;
-  }
+  }*/
 
   .gotvideo {
     width: 100%;
