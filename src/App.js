@@ -14,8 +14,14 @@ function App() {
         <Header data={model} setFilter={(x) => model.setFilter(x)} />
       </div>
       <div className="main-container">
-        <Suspense>
-          <ProjectController data={model} fallback={<></>} />
+        <Suspense
+          fallback={
+            <center>
+              <h1>Loading...</h1>
+            </center>
+          }
+        >
+          <ProjectController data={model} />
         </Suspense>
       </div>
     </div>
