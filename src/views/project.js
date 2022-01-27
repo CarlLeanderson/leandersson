@@ -2,18 +2,19 @@ import React, { useEffect, useState, useLayoutEffect } from "react";
 import "../style/project.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
-import Vimeo from "@u-wave/react-vimeo";
+//import Vimeo from "@u-wave/react-vimeo";
+import ReactPlayer from "react-player/lazy";
 import GifPlayer from "react-gif-player";
 
 const Project = (props) => {
-  const [width, height] = useWindowSize();
+  const [width] = useWindowSize();
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
   function useWindowSize() {
-    const [size, setSize] = useState([0, 0]);
+    const [size, setSize] = useState([0]);
     useLayoutEffect(() => {
       function updateSize() {
         setSize([window.innerWidth, window.innerHeight]);
@@ -24,6 +25,8 @@ const Project = (props) => {
     }, []);
     return size;
   }
+
+  //       <Vimeo responsive={true} video={props.data.videourl} />
 
   return (
     <div data-aos="fade-up" className="project-container">
@@ -36,8 +39,15 @@ const Project = (props) => {
           </div>
         )}
         {props.data.videourl && (
-          <div className="gotvideo">
-            <Vimeo responsive={true} video={props.data.videourl} />
+          <div id="gotvideo-div" className="player-wrapper">
+            <ReactPlayer
+              className="react-player"
+              width={width <= 1100 ? "100%" : "80%"}
+              height="100%"
+              url={props.data.videourl}
+              fallback={<></>}
+              light={true}
+            />
           </div>
         )}
       </div>

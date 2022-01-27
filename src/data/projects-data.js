@@ -68,7 +68,7 @@ const projectsData = [
     tag: "Visualizing data from the popular game service Steam.",
     description:
       "Steamind is a tool for visualizing games from your own Steam library as well as other games from Steam that might suit your interests.",
-    videourl: "526182623",
+    videourl: "https://vimeo.com/526182623",
     img: "",
     techlist: ["Data Visualization", "HTML/CSS", "Javascript", "D3.js"],
     links: [],
@@ -81,7 +81,7 @@ const projectsData = [
     category: "AR",
     tag: "What will the soundscapes of post-pandemic Stockholm sound like?",
     description: "An Augmented Reality application.",
-    videourl: "548755071",
+    videourl: "https://vimeo.com/548755071",
     img: "",
     techlist: ["C#", "Unity", "Vuforia", "Sound design"],
     links: [
@@ -100,7 +100,7 @@ const projectsData = [
     category: "Other",
     description:
       "With the use of the social robot Furhat, two human-robot interactions were created where one interaction encountered simulated failures. The subjects where recorded to see if it is possible to estimate user satisfaction from their facial traits during the interaction.",
-    videourl: "500393975",
+    videourl: "https://vimeo.com/500393975",
     techlist: [
       "Human-Robot interaction",
       "Facial recognition",
@@ -118,7 +118,7 @@ const projectsData = [
     type: "Mockup",
     tag: "Mockup for SL",
     description: "Mockup for the SL app to better avoid crowdedness",
-    videourl: "548756580",
+    videourl: "https://vimeo.com/548756580",
     img: "",
     techlist: ["Evaluation", "Mockup/prototype", "Develop idea"],
     links: [],
