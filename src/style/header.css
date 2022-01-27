@@ -1,9 +1,11 @@
 .navbar {
   margin-top: 3em;
+  padding-bottom: 6em;
 }
 .title {
   font-size: 2rem;
   font-weight: 400;
+  float: left;
 }
 
 .nav-a {
@@ -16,21 +18,55 @@
   float: right;
 }
 
-@media screen and (max-width: 720px) {
-  .navigationdiv {
-    float: left;
-    margin-top: 0% !important;
+@media screen and (max-width: 450px) {
+  #categories {
+    float: left !important;
   }
 }
 
+@media screen and (max-width: 530px) {
+  .navbar {
+    margin-top: 3em;
+    padding-bottom: 10em !important;
+  }
+  .filter-drop {
+    margin-top: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar {
+    padding-bottom: 13em !important;
+  }
+  .filter-drop {
+    margin-top: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar {
+    margin-top: 3em;
+    padding-bottom: 5em;
+  }
+  .filter-drop {
+    font-size: 1rem;
+    float: right;
+    margin-right: 5rem;
+    font-family: "Inconsolata", monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
 .filter-drop {
   font-size: 1rem;
+  margin-top: 2rem;
   float: right;
   margin-right: 2rem;
   font-family: "Inconsolata", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.navigationdiv {
-  margin-top: -5%;
+
+#categories {
+  float: right;
 }

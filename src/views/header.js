@@ -21,26 +21,22 @@ class Header extends React.Component {
           <br />
           Projects
         </h1>
-        <div className="navigationdiv">
-          <a id="projectnav" className="nav-a" href="#projects">
-            Projects
-          </a>
-          <select
-            onChange={filterHandler}
-            className="filter-drop"
-            name="Categories"
-            id="categories"
-          >
-            <option value="All">All</option>
-            {categories.map((x, index) => {
-              return (
-                <option key={index} value={x}>
-                  {x}
-                </option>
-              );
-            })}
-          </select>
-        </div>
+
+        <select
+          onChange={filterHandler}
+          className="filter-drop"
+          name="Categories"
+          id="categories"
+        >
+          <option value="All">All</option>
+          {categories.map((x, index) => {
+            return (
+              <option key={index} value={x}>
+                {x}
+              </option>
+            );
+          })}
+        </select>
       </nav>
     );
   }

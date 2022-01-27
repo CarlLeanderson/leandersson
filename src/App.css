@@ -28,3 +28,7 @@ body {
 .header {
   padding-bottom: 10%;
 }
+
+.main-container {
+  position: relative;
+}

@@ -49,6 +49,7 @@ img {
     grid-template-areas:
       "project-content"
       "project-info";
+    position: relative;
   }
 
   .project-content {
