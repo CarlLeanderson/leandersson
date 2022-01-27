@@ -10,7 +10,7 @@ const projectsData = [
       "UniBokApp is an app where a user can sell and buy second hand course literature. A user logs in using Facebook and can then browse popular titles ans latest views. They can also search among ads and create their on ads. An add contains title, ISBN, price, condition and images of the book, which the user can upload from it's cameraroll. UniBook is an iOS app built in SwitftUI. A NodeJS server for push notifications was made as well.",
     videourl: "",
     img: "https://lehambergson.com/assets/ub.gif",
-    still: "https://lehambergson.com/assets/ub.webp",
+    still: "https://lehambergson.com/assets/ub-low.webp",
     techlist: ["Swift", "SwiftUI", "Firebase", "NodeJS"],
     links: [
       {
@@ -34,7 +34,7 @@ const projectsData = [
       "Course picker is a website where students at KTH can search for elective courses that are relevant to their program. The user is presented with a tree diagram that expands when users add courses to it.",
     videourl: "",
     img: "https://lehambergson.com/assets/coursepicker.gif",
-    still: "https://lehambergson.com/assets/coursepicker.webp",
+    still: "https://lehambergson.com/assets/coursepicker-low.webp",
     techlist: ["React", "Javascript", "SQL queries", "NodeJS"],
     links: [
       {
@@ -54,9 +54,9 @@ const projectsData = [
       "A quiz application where users can log in, play and create random word quizzes.",
     videourl: "",
     img: "https://lehambergson.com/assets/iprog.gif",
-    still: "https://lehambergson.com/assets/iprog.webp",
+    still: "https://lehambergson.com/assets/iprog-low.webp",
     techlist: ["React", "Javascript", "Firebase"],
-    links: [{}],
+    links: [],
   },
 
   {
@@ -86,7 +86,7 @@ const projectsData = [
     techlist: ["C#", "Unity", "Vuforia", "Sound design"],
     links: [
       {
-        linktitle: "Download projet",
+        linktitle: "Download project",
         link: "https://drive.google.com/file/d/1_Li6P4pvq6dF2xKwp1glIE0MmAFIjPFf/view?usp=sharing",
       },
     ],

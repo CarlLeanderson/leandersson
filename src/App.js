@@ -4,6 +4,7 @@ import Model from "./data/model";
 import ProjectController from "./controllers/ProjectController";
 
 let model = new Model();
+
 function App() {
   return (
     <div className="App">
