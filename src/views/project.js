@@ -7,6 +7,7 @@ import GifPlayer from "react-gif-player";
 
 const Project = (props) => {
   const [width] = useWindowSize();
+  const [preview, setPreview] = useState(true);
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -38,9 +39,10 @@ const Project = (props) => {
         {props.data.videourl && (
           <div id="gotvideo-div" className="player-wrapper">
             <ReactPlayer
+              onClickPreview={() => setPreview(false)}
               className="react-player"
               width={width <= 1100 ? "100%" : "80%"}
-              height="100%"
+              height={preview && width >= 1100 ? "80%" : "100%"}
               url={props.data.videourl}
               fallback={<></>}
               light={true}
