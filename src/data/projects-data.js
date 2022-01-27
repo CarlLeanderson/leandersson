@@ -45,22 +45,43 @@ const projectsData = [
   },
   {
     id: "3",
-    project: "Iprog Word Quiz",
-    title: "Iprog Word Quiz",
+    project: "Tomode",
+    category: "Web",
+    title: "Tomode",
+    type: "Website",
+    tag: "Tomodemusic.com",
+    description:
+      "A website for the band Tomode. It's a static website made with Javascript, HTML and CSS",
+    videourl: "",
+    img: "https://lehambergson.com/assets/tomode-small.gif",
+    still: "https://lehambergson.com/assets/tomode.webp",
+    techlist: ["Javascript", "HTML", "CSS"],
+    links: [
+      {
+        linktitle: "Website",
+        link: "https://tomodemusic.com",
+      },
+    ],
+  },
+  {
+    id: "4",
+    project: "Word Quiz",
+    title: "Word Quiz",
     category: "Web",
     type: "React Web Application",
-    tag: "A react web application made for the course 'Iprog' at KTH.",
+    tag: "A react web application made during a course at KTH.",
     description:
       "A quiz application where users can log in, play and create random word quizzes.",
     videourl: "",
-    img: "https://lehambergson.com/assets/iprog.gif",
-    still: "https://lehambergson.com/assets/iprog-low.webp",
+    img: "https://lehambergson.com/assets/iprog-low.gif",
+    still: "https://lehambergson.com/assets/iprog.webp",
+
     techlist: ["React", "Javascript", "Firebase"],
     links: [],
   },
 
   {
-    id: "4",
+    id: "5",
     project: "Steamind",
     title: "Steamind",
     type: "Website",
@@ -74,7 +95,7 @@ const projectsData = [
     links: [],
   },
   {
-    id: "5",
+    id: "6",
     project: "The post-pandemic soundscapes of Stockholm",
     title: "The post-pandemic soundscapes of Stockholm",
     type: "AR application",
@@ -92,7 +113,7 @@ const projectsData = [
     ],
   },
   {
-    id: "6",
+    id: "7",
     project: "User (Dis)Satisfaction Estimation in Human-Robot Interactions",
     title: "User (Dis)Satisfaction Estimation in Human-Robot Interactions",
     type: "User Evaluation",
@@ -111,7 +132,7 @@ const projectsData = [
     links: [],
   },
   {
-    id: "7",
+    id: "8",
     project: "SL - pandemic",
     title: "SL - pandemic mockup",
     category: "Other",

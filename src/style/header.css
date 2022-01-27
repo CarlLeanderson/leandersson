@@ -16,9 +16,11 @@
   float: right;
 }
 
-#projectnav {
-  /*text-decoration: underline !important;
-  TBD*/
+@media screen and (max-width: 720px) {
+  .navigationdiv {
+    float: left;
+    margin-top: 0% !important;
+  }
 }
 
 .filter-drop {
@@ -28,4 +30,7 @@
   font-family: "Inconsolata", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.navigationdiv {
+  margin-top: -5%;
 }
