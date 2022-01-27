@@ -1,8 +1,8 @@
 import "./App.css";
 import Header from "./views/header";
 import Model from "./data/model";
-import ProjectController from "./controllers/ProjectController";
-
+import React, { Suspense } from "react";
+const Project = React.lazy(() => import("./controllers/ProjectController"));
 let model = new Model();
 
 function App() {
@@ -12,7 +12,9 @@ function App() {
         <Header data={model} setFilter={(x) => model.setFilter(x)} />
       </div>
       <div className="main-container">
-        <ProjectController data={model} />
+        <Suspense>
+          <ProjectController data={model} fallback={<></>} />
+        </Suspense>
       </div>
     </div>
   );
