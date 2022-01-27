@@ -73,7 +73,7 @@ const projectsData = [
     description:
       "A quiz application where users can log in, play and create random word quizzes.",
     videourl: "",
-    img: "https://lehambergson.com/assets/iprog-low.gif",
+    img: "https://lehambergson.com/assets/iprog.gif",
     still: "https://lehambergson.com/assets/iprog.webp",
 
     techlist: ["React", "Javascript", "Firebase"],
