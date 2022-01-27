@@ -1,3 +1,4 @@
+@import url("https://unpkg.com/react-gif-player@0.4.2/dist/gifplayer.css");
 .project-container {
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
@@ -5,6 +6,11 @@
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "project-content project-info";
+  margin-bottom: 10%;
+}
+
+.project-img {
+  width: 80%;
 }
 
 .project-content {
@@ -20,6 +26,10 @@
 }
 
 @media screen and (max-width: 1100px) {
+  .project-img {
+    width: 100%;
+  }
+
   .gotvideo {
     width: 100%;
   }
