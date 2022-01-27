@@ -15,7 +15,11 @@ const Project = (props) => {
       <div className="project-content">
         <h2>{props.data.title}</h2>
         <p>{props.data.tag}</p>
-        {props.data.img && <GifPlayer gif={props.data.img} />}
+        {props.data.img && (
+          <div className=".project-img">
+            <GifPlayer gif={props.data.img} still={props.data.still} />
+          </div>
+        )}
         {props.data.videourl && (
           <div className="gotvideo">
             <Vimeo responsive={true} video={props.data.videourl} />

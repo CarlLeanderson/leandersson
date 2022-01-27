@@ -10,6 +10,7 @@ const projectsData = [
       "UniBokApp is an app where a user can sell and buy second hand course literature. A user logs in using Facebook and can then browse popular titles ans latest views. They can also search among ads and create their on ads. An add contains title, ISBN, price, condition and images of the book, which the user can upload from it's cameraroll. UniBook is an iOS app built in SwitftUI. A NodeJS server for push notifications was made as well.",
     videourl: "",
     img: "https://lehambergson.com/assets/ub.gif",
+    still: "https://lehambergson.com/assets/ub.png",
     techlist: ["Swift", "SwiftUI", "Firebase", "NodeJS"],
     links: [
       {
@@ -33,6 +34,7 @@ const projectsData = [
       "Course picker is a website where students at KTH can search for elective courses that are relevant to their program. The user is presented with a tree diagram that expands when users add courses to it.",
     videourl: "",
     img: "https://lehambergson.com/assets/coursepicker.gif",
+    still: "https://lehambergson.com/assets/coursepicker.png",
     techlist: ["React", "Javascript", "SQL queries", "NodeJS"],
     links: [
       {
@@ -52,6 +54,7 @@ const projectsData = [
       "A quiz application where users can log in, play and create random word quizzes.",
     videourl: "",
     img: "https://lehambergson.com/assets/iprog.gif",
+    still: "https://lehambergson.com/assets/iprog.png",
     techlist: ["React", "Javascript", "Firebase"],
     links: [{}],
   },
