@@ -2,7 +2,9 @@ import "./App.css";
 import Header from "./views/header";
 import Model from "./data/model";
 import React, { Suspense } from "react";
-const Project = React.lazy(() => import("./controllers/ProjectController"));
+const ProjectController = React.lazy(() =>
+  import("./controllers/ProjectController")
+);
 let model = new Model();
 
 function App() {
