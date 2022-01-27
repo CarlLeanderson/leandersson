@@ -2,7 +2,6 @@ import React, { useEffect, useState, useLayoutEffect } from "react";
 import "../style/project.css";
 import "aos/dist/aos.css";
 import Aos from "aos";
-//import Vimeo from "@u-wave/react-vimeo";
 import ReactPlayer from "react-player/lazy";
 import GifPlayer from "react-gif-player";
 
@@ -26,8 +25,6 @@ const Project = (props) => {
     return size;
   }
 
-  //       <Vimeo responsive={true} video={props.data.videourl} />
-
   return (
     <div data-aos="fade-up" className="project-container">
       <div className="project-content">
@@ -46,7 +43,6 @@ const Project = (props) => {
               height="100%"
               url={props.data.videourl}
               fallback={<></>}
-              light={true}
             />
           </div>
         )}
