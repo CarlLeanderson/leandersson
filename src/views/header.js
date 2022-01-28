@@ -15,29 +15,32 @@ class Header extends React.Component {
       this.props.setFilter(document.getElementById("categories").value);
     };
     return (
-      <nav className="navbar">
-        <h1 className="title" href="index.html">
-          Carl Leandersson
-          <br />
-          Projects
-        </h1>
-
-        <select
-          onChange={filterHandler}
-          className="filter-drop"
-          name="Categories"
-          id="categories"
-        >
-          <option value="All">All</option>
-          {categories.map((x, index) => {
-            return (
-              <option key={index} value={x}>
-                {x}
-              </option>
-            );
-          })}
-        </select>
-      </nav>
+      <div className="header">
+        <div className="title-container">
+          <h1 className="title" href="index.html">
+            Carl Leandersson
+            <br />
+            Projects
+          </h1>
+        </div>
+        <div className="filter-class">
+          <select
+            onChange={filterHandler}
+            className="filter-drop"
+            name="Categories"
+            id="categories"
+          >
+            <option value="All">All</option>
+            {categories.map((x, index) => {
+              return (
+                <option key={index} value={x}>
+                  {x}
+                </option>
+              );
+            })}
+          </select>
+        </div>
+      </div>
     );
   }
 }

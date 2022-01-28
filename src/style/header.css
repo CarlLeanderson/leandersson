@@ -1,72 +1,80 @@
-.navbar {
-  margin-top: 3em;
-  padding-bottom: 6em;
-}
 .title {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 400;
   float: left;
+  display: block;
+  font-family: "Raleway";
+}
+.header {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  height: 8rem;
+  margin-bottom: 7rem;
 }
 
-.nav-a {
-  font-family: "Inconsolata", monospace;
-  font-weight: 400;
-  font-size: 1rem;
+#categories {
+  margin: 2rem;
+  float: right;
   text-decoration: none;
-  margin-right: 2rem;
-  color: black;
-  float: right;
-}
-
-@media screen and (max-width: 450px) {
-  #categories {
-    float: left !important;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .navbar {
-    margin-top: 3em;
-    padding-bottom: 10em !important;
-  }
-  .filter-drop {
-    margin-top: 1rem !important;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .navbar {
-    padding-bottom: 13em !important;
-  }
-  .filter-drop {
-    margin-top: 1rem !important;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .navbar {
-    margin-top: 3em;
-    padding-bottom: 5em;
-  }
-  .filter-drop {
-    font-size: 1rem;
-    float: right;
-    margin-right: 5rem;
-    font-family: "Inconsolata", monospace;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-}
-.filter-drop {
-  font-size: 1rem;
-  margin-top: 2rem;
-  float: right;
-  margin-right: 2rem;
   font-family: "Inconsolata", monospace;
+  font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#categories {
+.filter-class {
+  height: 50%;
   float: right;
+  width: 20%;
+}
+
+.title-container {
+  height: 50%;
+  width: 80%;
+  float: left;
+}
+
+@media screen and (max-width: 500px) {
+  #categories {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  .header {
+    height: 12rem;
+    margin-bottom: 0;
+  }
+  .filter-class {
+    height: 50%;
+    float: left;
+    width: 100%;
+  }
+
+  .title-container {
+    height: 50%;
+    width: 100%;
+    float: left;
+  }
+}
+@media screen and (max-width: 360px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  #categories {
+    display: block;
+    float: left;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .header {
+    height: 10rem;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 295px) {
+  #categories {
+    margin-top: 3.5rem;
+  }
 }

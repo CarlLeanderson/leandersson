@@ -51,10 +51,10 @@ const Project = (props) => {
         )}
       </div>
       <div className="project-info">
-        <h3 className="h3">{props.data.title}</h3>
-        <span className="">{props.data.type}</span>
+        <h2 className="project-info-title">{props.data.type}</h2>
         <p>{props.data.description}</p>
         <h4>What I did</h4>
+
         <ul className="">
           {props.data.techlist.map((x, index) => (
             <li key={index}>{x}</li>

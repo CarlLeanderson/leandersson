@@ -10,9 +10,8 @@ let model = new Model();
 function App() {
   return (
     <div className="App">
-      <div className="header">
-        <Header data={model} setFilter={(x) => model.setFilter(x)} />
-      </div>
+      <Header data={model} setFilter={(x) => model.setFilter(x)} />
+
       <div className="main-container">
         <Suspense
           fallback={
