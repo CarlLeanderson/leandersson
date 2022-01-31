@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 import ReactPlayer from "react-player/lazy";
 import GifPlayer from "react-gif-player";
-
 const Project = (props) => {
   const [width] = useWindowSize();
   const [preview, setPreview] = useState(true);
@@ -60,7 +59,9 @@ const Project = (props) => {
       <div className="project-info">
         <h2 className="project-info-title">{props.data.type}</h2>
         <p>{props.data.description}</p>
-        <h4>What I did</h4>
+        <p>
+          <b>What I did</b>
+        </p>
 
         <ul className="">
           {props.data.techlist.map((x, index) => (
@@ -71,7 +72,9 @@ const Project = (props) => {
           ""
         ) : (
           <div>
-            <h4>Links</h4>
+            <p>
+              <b>Links</b>
+            </p>
             {props.data.links.map((x, index) => (
               <a key={index} href={x.link}>
                 {x.linktitle}
