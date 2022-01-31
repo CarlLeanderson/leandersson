@@ -23,6 +23,7 @@ const projectsData = [
       },
     ],
   },
+
   {
     id: "2",
     project: "Course picker",
@@ -35,7 +36,7 @@ const projectsData = [
     videourl: "",
     img: "https://lehambergson.com/assets/coursepicker.gif",
     still: "https://lehambergson.com/assets/coursepicker-low.webp",
-    techlist: ["React", "Javascript", "SQL queries", "NodeJS"],
+    techlist: ["React", "Firebase", "SQL queries", "NodeJS"],
     links: [
       {
         linktitle: "Website",
@@ -45,6 +46,26 @@ const projectsData = [
   },
   {
     id: "3",
+    project: "CL Projects",
+    title: "Carl Leandersson Projects",
+    category: "Web",
+    type: "React Web Application",
+    tag: "Project website",
+    description:
+      "This is the website you're currently viewing. It was build using React and optimised for Google Lighthouse util it reached a 100 score for desktop.",
+    videourl: "",
+    img: "https://lehambergson.com/assets/ldev.gif",
+    still: "https://lehambergson.com/assets/ldev.webp",
+    techlist: ["React", "Lazy-Loading", "Lighthouse"],
+    links: [
+      {
+        linktitle: "Lighthouse report",
+        link: "https://lehambergson.com/assets/leandersson.dev-lighthouse.html",
+      },
+    ],
+  },
+  {
+    id: "4",
     project: "Tomode",
     category: "Web",
     title: "Tomode",
@@ -64,7 +85,7 @@ const projectsData = [
     ],
   },
   {
-    id: "4",
+    id: "5",
     project: "Word Quiz",
     title: "Word Quiz",
     category: "Web",
@@ -81,7 +102,7 @@ const projectsData = [
   },
 
   {
-    id: "5",
+    id: "6",
     project: "Steamind",
     title: "Steamind",
     type: "Website",
@@ -95,7 +116,7 @@ const projectsData = [
     links: [],
   },
   {
-    id: "6",
+    id: "7",
     project: "The post-pandemic soundscapes of Stockholm",
     title: "The post-pandemic soundscapes of Stockholm",
     type: "AR application",
@@ -113,7 +134,7 @@ const projectsData = [
     ],
   },
   {
-    id: "7",
+    id: "8",
     project: "User (Dis)Satisfaction Estimation in Human-Robot Interactions",
     title: "User (Dis)Satisfaction Estimation in Human-Robot Interactions",
     type: "User Evaluation",
@@ -132,7 +153,7 @@ const projectsData = [
     links: [],
   },
   {
-    id: "8",
+    id: "9",
     project: "SL - pandemic",
     title: "SL - pandemic mockup",
     category: "Other",

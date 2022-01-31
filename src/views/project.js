@@ -13,7 +13,7 @@ const Project = (props) => {
     let imgs = document.getElementsByTagName("img");
 
     for (let i = 0; i < imgs.length; i++) {
-      imgs[i].alt = props.data.title;
+      imgs[i].alt = "Project";
       imgs[i].width = "0px";
       imgs[i].height = "0px";
     }
