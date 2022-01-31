@@ -11,6 +11,13 @@ const Project = (props) => {
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
+    let imgs = document.getElementsByTagName("img");
+
+    for (let i = 0; i < imgs.length; i++) {
+      imgs[i].alt = props.data.title;
+      imgs[i].width = "0px";
+      imgs[i].height = "0px";
+    }
   }, []);
 
   function useWindowSize() {
