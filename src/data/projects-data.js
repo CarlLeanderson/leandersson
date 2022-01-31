@@ -7,7 +7,7 @@ const projectsData = [
     type: "iOS Application",
     tag: "iOS app for acquiring and selling course literature.",
     description:
-      "UniBokApp is an app where users can sell and buy second-hand course literature. Users log in using Facebook and create ads using Google API for books. The ads are then stored on Firebase, where users can remove their ads once a book is sold. UniBook is an iOS app built in SwitftUI. A NodeJS server for push notifications was made as well.",
+      "UniBokApp is an app where users can sell and buy second-hand course literature. Users log in using Facebook and create ads using Google API for books. The ads are then stored on Firebase, where users can remove their ads once a book is sold. The app was built using SwitftUI. A NodeJS server for push notifications was made as well.",
     videourl: "",
     img: "https://lehambergson.com/assets/ub.gif",
     still: "https://lehambergson.com/assets/ub-low.webp",
