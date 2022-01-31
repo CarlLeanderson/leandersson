@@ -62,6 +62,10 @@ const projectsData = [
         linktitle: "Lighthouse report",
         link: "https://lehambergson.com/assets/leandersson.dev-lighthouse.html",
       },
+      {
+        linktitle: "GitHub",
+        link: " https://github.com/CarlLeanderson/leandersson",
+      },
     ],
   },
   {
