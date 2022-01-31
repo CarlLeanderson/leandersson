@@ -19,7 +19,7 @@ const projectsData = [
       },
       {
         linktitle: "GitHub - Push notification server",
-        link: "https://github.com/CALIELSA-BOOK/UniBookApp",
+        link: "https://github.com/CALIELSA-BOOK/APN_Server",
       },
     ],
   },
