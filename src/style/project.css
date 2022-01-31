@@ -76,7 +76,7 @@ a {
 
 a:hover {
   cursor: default;
-  /*text-decoration: underline;*/
+  text-decoration: underline;
 }
 
 .player-wrapper {

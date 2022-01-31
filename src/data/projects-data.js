@@ -7,11 +7,11 @@ const projectsData = [
     type: "iOS Application",
     tag: "iOS app for acquiring and selling course literature.",
     description:
-      "UniBokApp is an app where a user can sell and buy second hand course literature. A user logs in using Facebook and can then browse popular titles ans latest views. They can also search among ads and create their on ads. An add contains title, ISBN, price, condition and images of the book, which the user can upload from it's cameraroll. UniBook is an iOS app built in SwitftUI. A NodeJS server for push notifications was made as well.",
+      "UniBokApp is an app where users can sell and buy second-hand course literature. Users log in using Facebook and create ads using Google API for books. The ads are then stored on Firebase, where users can remove their ads once a book is sold. UniBook is an iOS app built in SwitftUI. A NodeJS server for push notifications was made as well.",
     videourl: "",
     img: "https://lehambergson.com/assets/ub.gif",
     still: "https://lehambergson.com/assets/ub-low.webp",
-    techlist: ["Swift", "SwiftUI", "Firebase", "NodeJS"],
+    techlist: ["Swift", "API", "Firebase", "NodeJS"],
     links: [
       {
         linktitle: "GitHub - App",
@@ -32,11 +32,11 @@ const projectsData = [
     type: "React Web Application",
     tag: "A website for picking elective courses at KTH",
     description:
-      "Course picker is a website where students at KTH can search for elective courses that are relevant to their program. The user is presented with a tree diagram that expands when users add courses to it.",
+      "Course picker is a website where students at KTH can search for elective courses relevant to their program. The user is presented with a tree diagram that expands when users add courses. The course information is fetched from KTH Kopps API. Firebase was used to save reviews from students.",
     videourl: "",
     img: "https://lehambergson.com/assets/coursepicker.gif",
     still: "https://lehambergson.com/assets/coursepicker-low.webp",
-    techlist: ["React", "Firebase", "SQL queries", "NodeJS"],
+    techlist: ["React", "Firebase", "SQL queries", "API"],
     links: [
       {
         linktitle: "Website",
@@ -52,10 +52,10 @@ const projectsData = [
     type: "React Web Application",
     tag: "Project website",
     description:
-      "This is the website you're currently viewing. It was build using React and optimised for Google Lighthouse util it reached a 100 score for desktop.",
+      "This is the website you're currently viewing. It was built using React and optimised for Google Lighthouse util it reached a 100 score for desktop.",
     videourl: "",
-    img: "https://lehambergson.com/assets/ldev.gif",
-    still: "https://lehambergson.com/assets/ldev.webp",
+    img: "https://lehambergson.com/assets/lpdev.gif",
+    still: "https://lehambergson.com/assets/Ldevp.webp",
     techlist: ["React", "Lazy-Loading", "Lighthouse"],
     links: [
       {
@@ -92,12 +92,12 @@ const projectsData = [
     type: "React Web Application",
     tag: "A react web application made during a course at KTH.",
     description:
-      "A quiz application where users can log in, play and create random word quizzes.",
+      "A quiz application where users can log in, play and create random word quizzes. The random quizzes are created using the Words API and stored on Firebase",
     videourl: "",
     img: "https://lehambergson.com/assets/iprog.gif",
     still: "https://lehambergson.com/assets/iprog.webp",
 
-    techlist: ["React", "Javascript", "Firebase"],
+    techlist: ["React", "Javascript", "Firebase", "API"],
     links: [],
   },
 
@@ -109,10 +109,10 @@ const projectsData = [
     category: "Web",
     tag: "Visualizing data from the popular game service Steam.",
     description:
-      "Steamind is a tool for visualizing games from your own Steam library as well as other games from Steam that might suit your interests.",
+      "Steamind is a tool for visualizing games from your own Steam library and other games from Steam that might suit your interests.",
     videourl: "https://vimeo.com/526182623",
     img: "",
-    techlist: ["Data Visualization", "HTML/CSS", "Javascript", "D3.js"],
+    techlist: ["Data Visualization", "API", "Javascript", "D3.js"],
     links: [],
   },
   {
