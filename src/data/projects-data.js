@@ -32,7 +32,7 @@ const projectsData = [
     type: "React Web Application",
     tag: "A website for picking elective courses at KTH",
     description:
-      "Course picker is a website where students at KTH can search for elective courses relevant to their program. The user is presented with a tree diagram that expands when users add courses. The course information is fetched from KTH Kopps API. Firebase was used to save reviews from students.",
+      "Course picker is a website where students at KTH can search for elective courses relevant to their program. The user is presented with a tree diagram that expands when users add courses. The course information is fetched from KTH Kopps API. Firebase was used to save reviews from students. Implementation was made for desktop.",
     videourl: "",
     img: "https://lehambergson.com/assets/coursepicker.gif",
     still: "https://lehambergson.com/assets/coursepicker-low.webp",
@@ -52,7 +52,7 @@ const projectsData = [
     type: "React Web Application",
     tag: "Project website",
     description:
-      "This is the website you're currently viewing. It was built using React and optimised for Google Lighthouse util it reached a 100 score for desktop.",
+      "This is the website you're currently viewing. It was built using React and optimised for Google Lighthouse until it reached a 100 score for desktop.",
     videourl: "",
     img: "https://lehambergson.com/assets/lpdev.gif",
     still: "https://lehambergson.com/assets/Ldevp.webp",
