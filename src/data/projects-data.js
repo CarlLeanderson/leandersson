@@ -11,7 +11,7 @@ const projectsData = [
     videourl: "",
     img: "https://lehambergson.com/assets/ub.gif",
     still: "https://lehambergson.com/assets/ub-low.webp",
-    techlist: ["Swift", "API", "Firebase", "NodeJS"],
+    techlist: ["Swift", "Async/await", "Firebase", "NodeJS"],
     links: [
       {
         linktitle: "GitHub - App",
@@ -36,7 +36,7 @@ const projectsData = [
     videourl: "",
     img: "https://lehambergson.com/assets/coursepicker.gif",
     still: "https://lehambergson.com/assets/coursepicker-low.webp",
-    techlist: ["React", "Firebase", "SQL queries", "API"],
+    techlist: ["React", "Firebase", "SQL queries", "Async/await"],
     links: [
       {
         linktitle: "Website",
@@ -92,12 +92,12 @@ const projectsData = [
     type: "React Web Application",
     tag: "A react web application made during a course at KTH.",
     description:
-      "A quiz application where users can log in, play and create random word quizzes. The random quizzes are created using the Words API and stored on Firebase",
+      "A quiz application where users can log in, play and create random word quizzes. The random quizzes are created using the Words API and stored on Firebase.",
     videourl: "",
     img: "https://lehambergson.com/assets/iprog.gif",
     still: "https://lehambergson.com/assets/iprog.webp",
 
-    techlist: ["React", "Javascript", "Firebase", "API"],
+    techlist: ["React", "Javascript", "Firebase", "Async/await"],
     links: [],
   },
 
