@@ -17,11 +17,11 @@ const Header = (props) => {
     <div className="header">
       <div className="title-container">
         <h1 className="title" href="index.html">
-          <a href="" onClick={() => props.setProfile(true)} className="link">
+          <a href="#" onClick={() => props.setProfile(true)} className="link">
             Carl Leandersson
           </a>
           <br />
-          <a href="" onClick={() => props.setProfile(false)} className="link">
+          <a href="#" onClick={() => props.setProfile(false)} className="link">
             Projects
           </a>
         </h1>
