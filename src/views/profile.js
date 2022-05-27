@@ -28,7 +28,7 @@ const Profile = () => {
         I have a strong passion for the front-end. I've mainly worked with
         JavaScript/TypeScript and React with different state handling (Redux,
         Context, etc.). I have also acquired proficient knowledge within cloud
-        technologies through his previous employments and worked with many
+        technologies through previous employments and I've worked with many
         companies of different shapes and sizes. You can get in touch with me{" "}
         <a className="mailto" href="mailto:carl.leandersson99@gmail.com">
           here
