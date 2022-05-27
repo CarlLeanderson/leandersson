@@ -8,7 +8,7 @@ const ProjectController = React.lazy(() =>
 let model = new Model();
 
 function App() {
-  const [profile, setProfile] = useState(true);
+  const [profile, setProfile] = useState(false);
 
   const _setProfile = (x) => {
     setProfile(x);
