@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 import ReactPlayer from "react-player/lazy";
 import GifPlayer from "react-gif-player";
+
 const Project = (props) => {
   const [width] = useWindowSize();
   const [preview, setPreview] = useState(true);

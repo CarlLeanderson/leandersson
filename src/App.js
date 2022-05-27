@@ -1,16 +1,26 @@
 import "./App.css";
 import Header from "./views/header";
 import Model from "./data/model";
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 const ProjectController = React.lazy(() =>
   import("./controllers/ProjectController")
 );
 let model = new Model();
 
 function App() {
+  const [profile, setProfile] = useState(true);
+
+  const _setProfile = (x) => {
+    setProfile(x);
+  };
   return (
     <div className="App">
-      <Header data={model} setFilter={(x) => model.setFilter(x)} />
+      <Header
+        data={model}
+        setFilter={(x) => model.setFilter(x)}
+        setProfile={(x) => _setProfile(x)}
+        profile={profile}
+      />
 
       <div className="main-container">
         <Suspense
@@ -20,7 +30,7 @@ function App() {
             </center>
           }
         >
-          <ProjectController data={model} />
+          <ProjectController data={model} profile={profile} />
         </Suspense>
       </div>
     </div>

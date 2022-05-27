@@ -9,20 +9,24 @@ projectsData.forEach((proj) => {
   }
 });
 
-class Header extends React.Component {
-  render(props) {
-    const filterHandler = () => {
-      this.props.setFilter(document.getElementById("categories").value);
-    };
-    return (
-      <div className="header">
-        <div className="title-container">
-          <h1 className="title" href="index.html">
+const Header = (props) => {
+  const filterHandler = () => {
+    this.props.setFilter(document.getElementById("categories").value);
+  };
+  return (
+    <div className="header">
+      <div className="title-container">
+        <h1 className="title" href="index.html">
+          <a href="#" onClick={() => props.setProfile(true)} className="link">
             Carl Leandersson
-            <br />
+          </a>
+          <br />
+          <a href="#" onClick={() => props.setProfile(false)} className="link">
             Projects
-          </h1>
-        </div>
+          </a>
+        </h1>
+      </div>
+      {!props.profile ? (
         <div className="filter-class">
           <select
             onChange={filterHandler}
@@ -40,9 +44,11 @@ class Header extends React.Component {
             })}
           </select>
         </div>
-      </div>
-    );
-  }
-}
+      ) : (
+        ""
+      )}
+    </div>
+  );
+};
 
 export default Header;

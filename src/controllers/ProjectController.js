@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Suspense } from "react";
 import "../App.css";
+import Profile from "../views/profile";
 
 const Project = React.lazy(() => import("../views/project"));
 
@@ -23,7 +24,9 @@ const ProjectController = (props) => {
       return x.category === filterState;
     });
   }
-
+  if (props.profile) {
+    return <Profile />;
+  }
   return projects.map((x) => (
     <Suspense key={x.id} fallback={<></>}>
       <Project data={x} />
