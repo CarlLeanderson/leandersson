@@ -11,7 +11,7 @@ projectsData.forEach((proj) => {
 
 const Header = (props) => {
   const filterHandler = () => {
-    this.props.setFilter(document.getElementById("categories").value);
+    props.setFilter(document.getElementById("categories").value);
   };
   return (
     <div className="header">
